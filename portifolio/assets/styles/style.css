@@ -1,0 +1,16 @@
+@import url("./var.css");
+
+* {
+    color: var(--white);
+    padding: 0px;
+    margin: 0px;
+}
+
+/* html {
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+} */
+
+body {
+    background: #080429;
+}

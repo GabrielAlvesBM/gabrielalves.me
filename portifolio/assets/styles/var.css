@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:wght@100;400&display=swap');
+
+:root {
+    --fonte-principal: ;
+    --fonte-secundaria: "Abril Fatface", 'Times New Roman', Times, serif;
+    --tamanho-fonte: 16px;
+    
+    --cor-primaria: #020a13;
+    --white: #fff;
+    --black: #000;
+    --gray: #9e9e9c;
+}
