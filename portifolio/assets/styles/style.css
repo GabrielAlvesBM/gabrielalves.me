@@ -2,8 +2,12 @@
 
 * {
     color: var(--white);
+    font-family: var(--fonte-principal);
     padding: 0px;
     margin: 0px;
+
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /* html {
@@ -12,5 +16,110 @@
 } */
 
 body {
-    background: #080429;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+    background: var(--bg);
+}
+
+.background::before {
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    color: rgba(113, 113, 113, 0.07);
+    position: fixed;
+    z-index: -1;
+    
+    background: linear-gradient(currentcolor 1px, transparent 1px) 0% 0% / 94px 90px, linear-gradient(to right, currentcolor 1px, transparent 1px) 0% 0% / 94px 90px, transparent;
+    transition: all 0.5s linear 0s;
+}
+
+.background::after {
+    background-image: radial-gradient(at 40% 40%, rgb(30, 144, 255) 0px, transparent 50%), radial-gradient(at 90% 10%, rgb(255, 105, 180) 0px, transparent 50%), radial-gradient(at 50% 95%, rgb(0, 255, 255) 0px, transparent 50%), radial-gradient(at 20% 30%, rgb(50, 205, 50) 0px, transparent 50%), radial-gradient(at 90% 90%, rgb(255, 255, 0) 0px, transparent 50%), radial-gradient(at 33% 50%, rgb(255, 69, 0) 0px, transparent 50%), radial-gradient(at 79% 53%, rgb(128, 0, 128) 0px, transparent 50%);
+    position: fixed;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    filter: blur(100px) saturate(100%);
+    top: 0px;
+    opacity: 0.1;
+    transform: translateZ(0px);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80vw;
+    max-width: 1200px;
+    margin: 75px 50px;
+}
+
+#gabriel-logo {
+    font-size: 2.15em;
+    font-weight: 300;
+    font-variant: small-caps;
+
+    padding: 2.5px;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-bar a {
+    padding: 8px 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 100%;
+    width: 90vw;
+    max-width: 960px;
+    margin: 0px 20px;
+}
+
+.footer {
+    margin: 50px 5px;
+    width: 100%;
+}
+
+.redes-sociais {
+    display: flex;
+    gap: 40px;
+} 
+
+.redes-sociais a {
+    display: inline-block;
+    padding: 5px 12px;
+}
+
+
+.title {
+    font-size: 2.2em;
+    text-transform: uppercase;
+    letter-spacing: 7.7px;
+    font-weight: 400;
+
+    padding-bottom: 30px;
+}
+
+.body-text {
+    line-height: 2.5;
+    font-weight: 200;
+}
+
+.body-text p {
+    padding-bottom: 25px;
+}
+
+.body-text a {
+    font-weight: 600;
 }
