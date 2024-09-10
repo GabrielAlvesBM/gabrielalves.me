@@ -11,5 +11,24 @@
     --white: #fff;
     --black: #000;
     --gray: #9e9e9c;
-    --hover-color: rgb(127.5, 127.5, 127.5, 0.2);
+    --opacity-gray: #80808033;
+    --gray-alpha: #07121dd4;
+
+    --selection-color: #a52a2a99;
+}
+
+.lightmode {
+    --fonte-principal: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fonte-secundaria: "Abril Fatface", 'Times New Roman', Times, serif;
+    --tamanho-fonte: 16px;
+    
+    --bg: #fffbfb;
+    --cor-primaria: #020a13;
+    --white: #020a13;
+    --black: #fff;
+    --gray: #9e9c9c;
+    --opacity-gray: #7a797933;
+    --gray-alpha: #07121dd4;
+
+    --selection-color: #a52a2a;
 }

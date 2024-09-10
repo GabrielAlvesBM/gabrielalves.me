@@ -1,0 +1,91 @@
+@media screen and (max-width: 990px) {
+    .hamburgerBtn {
+        position: relative;
+        z-index: 3;
+    }
+
+    .hamburger {
+        display: block !important;
+        z-index: 2;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px !important;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        width: 100vw;
+        height: 100vh;
+
+        clip-path: circle(0% at 86.4% 16.84%);
+        transition: 0.7s ease-out;
+
+        backdrop-filter: blur(6px) saturate(2.5);
+        background-color: var(--gray-alpha);
+
+        pointer-events: none;
+    }
+
+    .active{
+        clip-path: circle(150% at 86.4% 16.84%);
+        pointer-events: all;
+    }
+
+    .active a, .active i{
+        color: #fff !important;
+    }
+
+    .activeBtn .hamburger {
+        border-top-color: transparent;
+    }
+    
+    .activeBtn .hamburger::before {
+        transform: rotate(135deg);
+        background-color: #fff;
+    }
+    
+    .activeBtn .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+
+        background-color: #fff;
+    }
+
+    .next-page {
+        margin-bottom: 100px;
+    }
+
+    .footer {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+
+        margin: 0px !important;
+        z-index: 1;
+        
+        width: 100vw;
+        backdrop-filter: blur(6px) saturate(2.5);
+        background-color: var(--gray-alpha);
+    }
+
+    .redes-sociais {
+        align-items: center;
+        justify-content: space-evenly;
+
+        height: 60px;
+    }
+
+    .redes-sociais i {
+        color: #fff !important;
+    }
+
+    .overflow-track {
+        overflow: hidden;
+    }
+}
