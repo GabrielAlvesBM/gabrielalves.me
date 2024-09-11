@@ -13,6 +13,7 @@
     --gray: #9e9e9c;
     --opacity-gray: #4a494919;
     --gray-alpha: #07121dd4;
+    --border: #14202b;
 
     --selection-color: #a52a2a99;
 }
@@ -29,6 +30,7 @@
     --gray: #9e9c9c;
     --opacity-gray: #7a797923;
     --gray-alpha: #07121dd4;
+    --border: #14202b5b;
 
     --selection-color: #a52a2a;
 }

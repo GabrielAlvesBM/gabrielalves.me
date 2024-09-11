@@ -1,5 +1,6 @@
 @import url("./var.css");
 @import url("./home.css");
+@import url("./contato.css");
 @import url("./mediaQuerys.css");
 
 * {
@@ -36,6 +37,13 @@ a {
     text-decoration: none;
     padding: 3px;
 }
+
+p {
+    line-height: 2.5;
+    font-size: 0.9em;
+    font-weight: 200;
+}
+
 
 .background::before {
     content: "";
@@ -170,6 +178,10 @@ a {
     width: 90vw;
     max-width: 960px;
     margin: 0px 20px;
+}
+
+.title {
+    font-size: 3em;
 }
 
 .next-page {

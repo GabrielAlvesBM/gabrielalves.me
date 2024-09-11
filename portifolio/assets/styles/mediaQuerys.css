@@ -1,4 +1,8 @@
 @media screen and (max-width: 990px) {
+    p {
+        font-size: 0.75em !important;
+    }
+
     .hamburgerBtn {
         position: relative;
         z-index: 3;
@@ -61,6 +65,10 @@
         background-color: #fff;
     }
 
+    .title {
+        font-size: 2.8em !important;
+    }
+
     .next-page {
         margin-bottom: 100px;
     }
@@ -103,5 +111,11 @@
 
     .nav-bar ul {
         gap: 70px !important;
+    }
+
+
+
+    .form-control {
+        width: 90%;
     }
 }
