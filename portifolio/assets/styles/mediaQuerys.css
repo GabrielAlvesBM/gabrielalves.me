@@ -32,6 +32,10 @@
         pointer-events: none;
     }
 
+    .nav a::before {
+        background-color: #fff !important;
+    }
+
     .active{
         clip-path: circle(150% at 86.4% 16.84%);
         pointer-events: all;
@@ -87,5 +91,17 @@
 
     .overflow-track {
         overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 787px) {
+    .header a {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }   
+
+    .nav-bar ul {
+        gap: 70px !important;
     }
 }
