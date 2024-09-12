@@ -1,7 +1,8 @@
 @import url("./var.css");
 @import url("./home.css");
-@import url("./contato.css");
 @import url("./sobre.css");
+@import url("./projetos.css");
+@import url("./contato.css");
 @import url("./mediaQuerys.css");
 
 * {
