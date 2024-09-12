@@ -14,6 +14,7 @@
     --opacity-gray: #4a494919;
     --gray-alpha: #07121dd4;
     --border: #14202b;
+    --external-link: #7a797948;
 
     --selection-color: #a52a2a99;
 }
@@ -21,7 +22,7 @@
 .lightmode {
     --fonte-principal: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fonte-secundaria: "Abril Fatface", 'Times New Roman', Times, serif;
-    --tamanho-fonte: 16px;
+    --tamanho-fonte: 18px;
     
     --bg: #fffbfb;
     --cor-primaria: #020a13;
@@ -31,6 +32,7 @@
     --opacity-gray: #7a797923;
     --gray-alpha: #07121dd4;
     --border: #14202b5b;
+    --external-link: #7a797963;
 
     --selection-color: #a52a2a;
 }

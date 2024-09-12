@@ -1,11 +1,13 @@
 @import url("./var.css");
 @import url("./home.css");
 @import url("./contato.css");
+@import url("./sobre.css");
 @import url("./mediaQuerys.css");
 
 * {
-    color: var(--white);
     font-family: var(--fonte-principal);
+    font-size: var(--tamanho-fonte);
+    color: var(--white);
     padding: 0px;
     margin: 0px;
 
@@ -42,6 +44,33 @@ p {
     line-height: 2.5;
     font-size: 0.9em;
     font-weight: 200;
+}
+
+.link-externo {
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+}
+
+.link-externo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--external-link);
+    
+    width: 0;
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.link-externo:hover::before {
+    width: 100%;
+}
+
+.title-link:hover {
+    text-decoration: underline;
 }
 
 
