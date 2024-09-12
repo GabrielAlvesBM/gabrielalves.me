@@ -1,8 +1,4 @@
 @media screen and (max-width: 990px) {
-    p {
-        font-size: 0.75em !important;
-    }
-
     .hamburgerBtn {
         position: relative;
         z-index: 3;
@@ -100,6 +96,12 @@
     .overflow-track {
         overflow: hidden;
     }
+
+
+    .image {
+        height: 210px;
+        width: 210px;
+    }
 }
 
 @media screen and (max-width: 787px) {
@@ -121,5 +123,15 @@
 
     .horizontal {
         flex-direction: column;
+    }
+
+
+    .duo-frame {
+        flex-wrap: wrap;
+    }
+
+    .image {
+        margin: 0 0 10px 1em;
+        border-radius: 50px 50px 5px 5px;
     }
 }

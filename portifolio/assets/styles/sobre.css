@@ -109,3 +109,13 @@
 
     background-color: var(--bg);
 }
+
+.duo-frame {
+    display: flex;
+}
+
+.image {
+    border-radius: 50px 5px 5px 25px;
+
+    width: 250px;
+}
