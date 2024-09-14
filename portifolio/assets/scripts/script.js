@@ -53,16 +53,3 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("activeBtn");
     document.body.classList.toggle("overflow-track");
 });
-
-// Projetos Functions
-
-const filterItem = document.querySelectorAll(".filter-item");
-
-filterItem.forEach((item) => {
-    item.addEventListener("click", () => {
-        filterItem.forEach((itemDelClass) => {
-            itemDelClass.classList.remove("active");
-        });
-        item.classList.toggle("active");
-    });
-});

@@ -262,6 +262,8 @@ p {
 .redes-sociais {
     display: flex;
     gap: 40px;
+
+    margin-bottom: 50px;
 } 
 
 .redes-sociais a {

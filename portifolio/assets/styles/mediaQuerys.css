@@ -87,6 +87,7 @@
         justify-content: space-evenly;
 
         height: 60px;
+        margin-bottom: 0px !important;
     }
 
     .redes-sociais i {
@@ -104,7 +105,7 @@
     }
 }
 
-@media screen and (max-width: 787px) {
+@media screen and (max-width: 767px) {
     .header a {
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -133,5 +134,21 @@
     .image {
         margin: 0 0 10px 1em;
         border-radius: 50px 50px 5px 5px;
+    }
+
+    
+    .sidebar-modal.actived {
+        top: 0px;
+        left: 0px;
+        width: calc(100% - 20px) !important;
+        padding-left: 15px;
+    }
+
+    .sidebar-modal::before {
+        display: none;
+    }
+
+    .sidebar__footer a {
+        width: 100%;
     }
 }

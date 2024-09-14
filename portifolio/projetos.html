@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://kit.fontawesome.com/57b9467fa3.js" crossorigin="anonymous"></script>
     <script src="./assets/scripts/script.js" defer></script>
+    <script src="./assets/scripts/projetos.js" defer></script>
 </head>
-<body class="background">
+<body class="background none-overflow">
     <span class="background-text projeto-background-text">Projetos.</span>
     <header class="header">
         <a href="index.html" id="gabriel-logo">&lt;/G&gt;</a>
@@ -49,7 +50,7 @@
                     <button class="filter-item">Freelance</button>
                 </nav>
                 <section class="tab-content">
-                    <article class="projeto" role="gridcell" tabindex="0">
+                    <article class="projeto selected" role="gridcell" tabindex="0">
     
                     </article>
                     <article class="projeto" role="gridcell" tabindex="0">
@@ -67,6 +68,36 @@
                 </section>
             </div>
         </section>
+
+        <div class="backdrop actived"></div>
+        <aside class="sidebar-modal actived">
+            <header class="sidebar__header">
+                <img src="./assets/icons/close.svg" alt="Close" class="close-svg">
+                <a href="" class="back-project">Voltar aos Projetos</a>
+            </header>
+            <main class="sidebar__main">
+                <h2 id="sidebar__title">Projeto Papel</h2>
+                <p id="sidebar__short-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci iusto sequi quos magnam quam aperiam sed quia tempore, commodi dolores ducimus tenetur est ad facilis ipsum necessitatibus nam in modi!</p>
+
+                <img src="./assets/images/gabrielalves.jpg" alt="Project Image" id="sidebar__image">
+                <h3 id="sidebar__title2">Sobre</h3>
+                <p id="sidebar__long-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas voluptates recusandae, veritatis perspiciatis, mollitia ab assumenda culpa velit dolorum delectus tenetur magni ullam, impedit quos soluta consectetur porro rem?</p>
+                <h3 id="sidebar__title3">Tecnologias</h3>
+                <ul id="sidebar__tec-list">
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>NextJS</li>
+                    <li>Sass</li>
+                </ul>
+                <h3 class="closer">Site</h3>
+                <a id="sidebar__site" href="https://www.gabrielalves.me">https://www.gabrielalves.me</a>
+                <h3 class="closer">GitHub</h3>
+                <a id="sidebar__github" href="https://github.com/gabrielalvesbm/portifolio">https://github.com/gabrielalvesbm/portifolio</a>
+            </main>
+            <footer class="sidebar__footer">
+                <a href="#" target="_blank">Abrir Projeto</a>
+            </footer>
+        </aside>
 
         <nav class="next-page fade-item">
             <a href="./contato.html">Entre em Contato
