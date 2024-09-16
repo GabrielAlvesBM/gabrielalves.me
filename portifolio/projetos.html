@@ -20,7 +20,7 @@
     <script src="./assets/scripts/script.js" defer></script>
     <script src="./assets/scripts/projetos.js" defer></script>
 </head>
-<body class="background none-overflow">
+<body class="background">
     <span class="background-text projeto-background-text">Projetos.</span>
     <header class="header">
         <a href="index.html" id="gabriel-logo">&lt;/G&gt;</a>
@@ -50,7 +50,8 @@
                     <button class="filter-item">Freelance</button>
                 </nav>
                 <section class="tab-content">
-                    <article class="projeto selected" role="gridcell" tabindex="0">
+                    <article class="projeto selected" role="gridcell" tabindex="0" data-title="Pagina FAQ" data-short-description="Descrição curta" data-image="./assets/images/gabrielalves.jpg" data-long-description="Descrição longa" data-tec-list="HTML, CSS, JavaScript" data-site="https://capable-basbousa-e24a2a.netlify.app" data-github="https://github.com/GabrielAlvesBM/mp-pagina-faq"> 
+                        <img src="./assets/images/gabrielalves.jpg" alt="Teste Deu">
     
                     </article>
                     <article class="projeto" role="gridcell" tabindex="0">
@@ -69,8 +70,8 @@
             </div>
         </section>
 
-        <div class="backdrop actived"></div>
-        <aside class="sidebar-modal actived">
+        <div class="backdrop"></div>
+        <aside class="sidebar-modal">
             <header class="sidebar__header">
                 <img src="./assets/icons/close.svg" alt="Close" class="close-svg">
                 <a href="" class="back-project">Voltar aos Projetos</a>
@@ -79,23 +80,19 @@
                 <h2 id="sidebar__title">Projeto Papel</h2>
                 <p id="sidebar__short-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci iusto sequi quos magnam quam aperiam sed quia tempore, commodi dolores ducimus tenetur est ad facilis ipsum necessitatibus nam in modi!</p>
 
-                <img src="./assets/images/gabrielalves.jpg" alt="Project Image" id="sidebar__image">
+                <img src="#" alt="Project Image" id="sidebar__image">
                 <h3 id="sidebar__title2">Sobre</h3>
                 <p id="sidebar__long-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas voluptates recusandae, veritatis perspiciatis, mollitia ab assumenda culpa velit dolorum delectus tenetur magni ullam, impedit quos soluta consectetur porro rem?</p>
                 <h3 id="sidebar__title3">Tecnologias</h3>
                 <ul id="sidebar__tec-list">
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>NextJS</li>
-                    <li>Sass</li>
                 </ul>
                 <h3 class="closer">Site</h3>
-                <a id="sidebar__site" href="https://www.gabrielalves.me">https://www.gabrielalves.me</a>
+                <a id="sidebar__site" href="https://www.gabrielalves.me" target="_blank">https://www.gabrielalves.me</a>
                 <h3 class="closer">GitHub</h3>
-                <a id="sidebar__github" href="https://github.com/gabrielalvesbm/portifolio">https://github.com/gabrielalvesbm/portifolio</a>
+                <a id="sidebar__github" href="https://github.com/gabrielalvesbm/portifolio" target="_blank">https://github.com/gabrielalvesbm/portifolio</a>
             </main>
             <footer class="sidebar__footer">
-                <a href="#" target="_blank">Abrir Projeto</a>
+                <a href="#" target="_blank" id="open-project">Abrir Projeto</a>
             </footer>
         </aside>
 

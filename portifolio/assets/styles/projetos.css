@@ -182,12 +182,13 @@
 
 .filter-item {
     padding: 5px 10px;
-    margin: 0px 5px;
+    margin: 5px;
 
     background: none;
     border: none;
 
     color: var(--gray);
+    font-size: 0.85em;
 
     cursor: pointer;
 
@@ -220,19 +221,24 @@
 }
 
 .projeto {
+    display: block;
     flex: 1 1 50%;
     box-sizing: border-box;
 
     border: 1px solid var(--white);
     border-radius: 5px;
 
-    height: 400px;
+    min-height: 200px;
     min-width: 300px;
-    max-width: 350px;
+    max-width: 400px;
 
     cursor: pointer;
 }
 
 .projeto:hover {
     box-shadow: inset 0 -10px 10px 5px #0000007a;
+}
+
+.projeto img {
+    width: 100%;
 }
