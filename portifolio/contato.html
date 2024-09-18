@@ -49,13 +49,12 @@
                     <input type="email" name="email" id="email" class="form-control" placeholder="Email" aria-required="true" required>
                 </div>
                 <div class="field">  
-                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="Mensagem" aria-required="true" required></textarea>
+                    <textarea name="message" id="message" class="form-control" rows="5" placeholder="Mensagem" maxlength="5000" aria-required="true" required></textarea>
                 </div>
                 
                 <button type="submit" class="btn" aria-label="Enviar Mensagem" data-button>Enviar Mensagem</button>
 
                 <input type="hidden" name="_captcha" value="false">
-                <input type="text" name="_honey" style="display:none">
             </form>
         </section>
 
