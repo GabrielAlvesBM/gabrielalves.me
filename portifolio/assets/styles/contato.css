@@ -34,3 +34,13 @@ form {
 
     cursor: pointer;
 }
+
+.enviado {
+    font-size: 2.5em !important;
+    font-weight: 100;
+}
+
+.btnEnviando {
+    cursor: default;
+    background-color: var(--gray);
+}
