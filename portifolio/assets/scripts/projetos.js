@@ -1,13 +1,29 @@
 // Projetos-filter Functions
 
-const filterItem = document.querySelectorAll(".filter-item");
+const filterButton = document.querySelectorAll(".filter");
+const projetos = document.querySelectorAll(".tab-content__projeto");
 
-filterItem.forEach((item) => {
+function filterItems(category) {
+    projetos.forEach((item) => {
+        let projetoCategory = item.getAttribute("data-category").split(' ');
+
+        if (category === 'all' || projetoCategory.includes(category)) {
+            item.classList.remove("hidden");
+        } else {
+            item.classList.add("hidden");
+        }
+    });
+};
+
+filterButton.forEach((item) => {
     item.addEventListener("click", () => {
-        filterItem.forEach((itemDelClass) => {
+        filterButton.forEach((itemDelClass) => {
             itemDelClass.classList.remove("active");
         });
-        item.classList.toggle("active");
+        item.classList.add("active");
+
+        let category = item.getAttribute("data-filter");
+        filterItems(category);
     });
 });
 
@@ -17,8 +33,6 @@ const closeAside = document.querySelector(".close-svg");
 const backProject = document.querySelector(".back-project");
 const backdrop = document.querySelector(".backdrop");
 const sidebarModal = document.querySelector(".sidebar-modal");
-
-const projetos = document.querySelectorAll(".projeto");
 
 const sidebar = {
     title:               document.querySelector("#sidebar__title"),

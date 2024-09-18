@@ -105,8 +105,10 @@
     }
 
     
-    .projeto {
+    .projeto__image {
         max-width: 375px;
+        width: 100%;
+        min-width: 10px;
     }
 }
 
