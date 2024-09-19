@@ -13,7 +13,7 @@ jobs:
             - name: Deploy para meu host
               uses: easingthemes/ssh-deploy@main
               env:
-                  SSH_PRIVATE_KEY: ${{secrets.SERVER_SSH_KEY}}
+                  SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
                   ARGS: "-rltgoDzvO --delete"
                   SOURCE: "src/"
                   REMOTE_HOST: ${{ secrets.SERVER_REMOTE_HOST }}
