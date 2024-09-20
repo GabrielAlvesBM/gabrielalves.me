@@ -18,4 +18,4 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         port: ${{ secrets.ftp_port }}
-        server-dir: public_html/gabrielalves/
+        source: "src/"
