@@ -31,7 +31,7 @@ jobs:
       - name: Setup SSH
         run: |
           eval "$(ssh-agent -s)"
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > private_key
+          echo "${{ secrets.SSH_PRIVATE_PASSWORD }}" | tr -d '\r' > private_key
           chmod 600 private_key
           ssh-add private_key
 
