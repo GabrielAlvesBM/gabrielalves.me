@@ -27,6 +27,14 @@ jobs:
     steps:
       - name: Repo Checkout
         uses: actions/checkout@v2
+
+      - name: Setup SSH
+        run: |
+          eval "$(ssh-agent -s)"
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' > private_key
+          chmod 600 private_key
+          ssh-add private_key
+
       - name: Hostinger Deployment
         uses: easingthemes/ssh-deploy@main
         with:
