@@ -6,9 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gabriel Alves",
   "license": "ISC",
-  "description": "",
+  "description": "Portifolio do Gabriel Alves",
   "dependencies": {
     "nodemailer": "^6.9.15"
   }
