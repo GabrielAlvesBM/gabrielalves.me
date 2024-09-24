@@ -26,11 +26,9 @@ function sendMail() {
     .then(
         (response) => {
             displaySuccess(form);
-            console.log('SUCCESS!', response.status, response.text);
         },
         (error) => {
             displayError(form)
-            console.log('FAILED...', error);
         },
     );
 };
