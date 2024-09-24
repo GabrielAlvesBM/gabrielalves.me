@@ -18,7 +18,18 @@
     <link rel="stylesheet" href="./assets/styles/style.css">
     <script src="https://kit.fontawesome.com/57b9467fa3.js" crossorigin="anonymous"></script>
     <script src="./assets/scripts/script.js" defer></script>
-    <script src="./assets/scripts/enviarEmail.js" defer></script>
+    <script src="./assets/scripts/enviarEmailJS.js" defer></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "0LccwxQmH-vbO4F-r",
+        });
+    })();
+    </script>
 </head>
 <body class="background">
     <span class="background-text">Contato.</span>
@@ -41,7 +52,7 @@
             <h1 class="title">Contato.</h1>
             <p class="description">Entre em contato ou me envie um e-mail diretamente para: <b>gabrielalvesbm.contato@gmail.com</b></p>
 
-            <form action="https://formsubmit.co/gabrielalvesbm.contato@gmail.com" method="POST" data-form>
+            <form>
                 <div class="field">
                     <input type="text" name="name" id="name" class="form-control" placeholder="Nome" aria-required="true" required>
                 </div>
@@ -52,9 +63,7 @@
                     <textarea name="message" id="message" class="form-control" rows="5" placeholder="Mensagem" maxlength="5000" aria-required="true" required></textarea>
                 </div>
                 
-                <button type="submit" class="btn" aria-label="Enviar Mensagem" data-button>Enviar Mensagem</button>
-
-                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="btn" aria-label="Enviar Mensagem">Enviar Mensagem</button>
             </form>
         </section>
 
