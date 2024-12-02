@@ -1,0 +1,11 @@
+# Ativar mod_rewrite
+RewriteEngine On
+
+# Redirecionar as páginas com extensão .html para a URL sem a extensão
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Redirecionar o index.html para a raiz
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ / [R=301,L]
