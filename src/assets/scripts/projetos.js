@@ -5,6 +5,12 @@ const projetos = document.querySelectorAll(".tab-content__projeto");
 
 function filterItems(category) {
     projetos.forEach((item) => {
+        // TODO: remove with the WIP article (data-temp-always-visible)
+        if (item.hasAttribute("data-temp-always-visible")) {
+            item.classList.remove("hidden");
+            return;
+        }
+
         let projetoCategory = item.getAttribute("data-category").split(' ');
 
         if (category === 'all' || projetoCategory.includes(category)) {
@@ -71,16 +77,21 @@ function updateSidebar(projeto) {
         github:              projeto.getAttribute("data-github"),
     };
 
+    // TEMP: remove with the WIP article (Em breve labels for data-site="#")
+    const isComingSoon = !dataAttributes.site || dataAttributes.site === "#";
+    const comingSoonLabel = "Em breve";
+
     sidebar.title.textContent = dataAttributes.title;
     sidebar.shortDescription.textContent = dataAttributes.shortDescription;
     sidebar.image.src = dataAttributes.image;
     sidebar.longDescription.textContent = dataAttributes.longDescription;
     sidebar.tecList.textContent = dataAttributes.tecList;
-    sidebar.site.href = dataAttributes.site;
-    sidebar.site.textContent = dataAttributes.site;
-    sidebar.github.href = dataAttributes.github;
-    sidebar.github.textContent = dataAttributes.github;
-    sidebar.openProject.href = dataAttributes.site;
+    sidebar.site.href = isComingSoon ? "#" : dataAttributes.site;
+    sidebar.site.textContent = isComingSoon ? comingSoonLabel : dataAttributes.site;
+    sidebar.github.href = (!dataAttributes.github || dataAttributes.github === "#") ? "#" : dataAttributes.github;
+    sidebar.github.textContent = (!dataAttributes.github || dataAttributes.github === "#") ? comingSoonLabel : dataAttributes.github;
+    sidebar.openProject.href = isComingSoon ? "#" : dataAttributes.site;
+    sidebar.openProject.textContent = isComingSoon ? comingSoonLabel : "Abrir Projeto";
 
     sidebar.tecList.innerHTML = '';
     for (let item of dataAttributes.tecList) {

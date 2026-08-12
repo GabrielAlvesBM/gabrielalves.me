@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Projeto em desenvolvimento">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1c22"/>
+      <stop offset="100%" stop-color="#2c303a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect x="40" y="40" width="720" height="420" rx="8" fill="none" stroke="#5a6070" stroke-width="2" stroke-dasharray="12 10"/>
+  <text x="400" y="245" text-anchor="middle" fill="#c8ccd4" font-family="Georgia, serif" font-size="36">Em Desenvolvimento</text>
+  <text x="400" y="290" text-anchor="middle" fill="#8a909c" font-family="Arial, sans-serif" font-size="18">Em breve</text>
+</svg>
